@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+	<head>
+		<title>TAG CCS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+	</head>
+	<body>
+        <div class="container">
+            <div class="landing row">
+                <div class="col s12 m6 offset-m3"  id="homeLogo">
+                    <button class="btn firstBtn"></button>
+                </div>
+            </div>
+            <div class="login">
+                <p class="font">CORE COMMITTEE SELECTIONS</p>
+                <div class=" card row">
+                    <div class="card-content">
+                        <div class="col s12 m6 center-align">
+                            <img class="" id="logoIm" src="img/logo2.png">
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="black-text">
+                                <ul><br>
+                                    <li>
+                                        <b class="head">Technical</b><br>
+                                        <p class="typeStyle">Gather knowledge, gain skills and adapt to the world of app, web and game development.</p><br>
+                                    </li>
+                                    <li>
+                                        <b class="head">Management</b><br>
+                                        <p class="typeStyle">Publicity, Sponsorship, Promotions, Organizing, Managing. Some of the jobs we carry out in the management team.</p><br>
+                                    </li>
+                                    <li>
+                                        <b class="head">Design</b><br>
+                                        <p class="typeStyle">Explore and learn about the importance of posters in design and marketing.</p><br>
+                                    </li>
+                                    <li>
+                                        <p class="typeStyle">PS: You can apply for multiple fields!</p><br>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-action center">
+                            </div>
+                        </div>
+                        <div class="center">
+                            <a href="#redgModal" class="waves-effect btn modal-trigger black-text" style="background: #ffc107;">Register Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="redgModal" class="modal center-align">
+            <form name="form1" method="POST" onsubmit="return myfun()" action="register.php">
+                <div class="modal-content center-align">
+                    <h4 class="center-align">Register Now!</h4><hr>
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Your Name..." id="pName" type="text" class="validate" name="name">
+                        <i class="material-icons prefix">account_balance</i>
+                        <input placeholder="Your Registration No..." id="pId" type="text" class="validate" name="reg">
+                        <p style="color:red;">*This password will be used during online test</p>
+                        <i class="material-icons prefix">lock</i>
+                        <input placeholder="Choose Password... " id="pPwd" type="password" class="validate" name="pass">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input placeholder="Re-enter Password..." id="pPwdConf" type="password" class="validate">
+                        <i class="material-icons prefix">phonelink_ring</i>
+                        <input placeholder="Your Contact Details..." id="pPhone" type="tel" class="validate" name="ph">
+                    </div>
+                    <div class="form-group">
+                        <div class="row margin">
+                            <div class="col s9 offset-s1">
+                                <input type="hidden" id="techh" name="tech"  value="No">
+                                <input class="col s3" type="checkbox" id="tech" name="tech">
+                                <label for="tech">Technical</label>
+                                <input type="hidden" id="mangh" name="mang"  value="No">
+                                &nbsp;&nbsp;&nbsp; &nbsp; <input class="col s3" type="checkbox" id="mang" name="mang">
+
+                                <label for="mang">Management</label>
+                                <input type="hidden" id="designh" name="design"  value="No">
+                                &nbsp;&nbsp; &nbsp;&nbsp;   <input class="col s3" type="checkbox" id="design" name="design">
+
+                                <label for="design">Design</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" style="background: #ffc107; margin:2px;" name="action" class="center-align modal-action modal-close waves-effect btn-flat">
+                    <input href="#" style="background: #ffc107; margin:2px;" class="center-align modal-action waves-effect btn-flat" type="reset">
+                </div>
+            </form>
+        </div>
+	</body>
+    <script language="JavaScript" type="text/javascript">
+        $(document).ready(function(){
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+    </script>
+    <script>
+        /*var typed1 = new Typed('#type1', {
+            strings: ['Who Are You?','A Developer..', 'A Designer..', 'A Gamer..', 'A Leader..', 'All of  Them?' ],
+            loop: true,
+            typeSpeed: 30,
+            backSpeed: 20,
+            backDelay: 1000
+        });*/
+    </script>
+    <script>
+        function myfun(){
+            var x;
+            var name = /^[A-Za-z]{3,20}$/;
+            var regnumber = /^17[B|M|b|m]{1}[A-Za-z]{2}[0-9]{4}$/;
+            var fullname = document.getElementById("pName").value;
+            var regno = document.getElementById("pId").value;
+            x = document.getElementById("pPhone").value;
+            var pwd1 = document.getElementById("pPwd").value;
+            var pwd2 = document.getElementById("pPwdConf").value;
+            var techResponse = document.getElementById("tech").checked;
+            var mgmtResponse = document.getElementById("mang").checked;
+            var desgResponse = document.getElementById("design").checked;
+            if (/^\d{10}$/.test(x)) {
+
+            } else {
+                alert("Invalid number; must be ten digits")
+                return false;
+            }
+
+            if (/^[A-Za-z ]{3,20}$/.test(fullname)) {
+            }
+            else{
+                alert("Your Name seems invalid !");
+                return false;
+            }
+            if (/^17[B|M|b|m]{1}[A-Za-z]{2}[0-9]{4}$/.test(regno)) {
+            }
+            else{
+                alert("Your Registration numbers looks invalid !");
+                return false;
+            }
+            if (pwd1.length >= 7 && pwd2.length >= 7){
+
+            }else{
+                alert("Password length must be atleast 7 characters long! ");
+                console.log(pwd1.length);
+                return false;
+            }
+            if(pwd1==pwd2){
+            }else{
+                alert("The passwords entered do not match. Please Verify");
+                return false;
+            }
+            if(!(document.getElementById("tech").checked || document.getElementById("mang").checked || document.getElementById("design").checked))
+            {
+                alert('You must choose a field of interest');
+                return false;
+            }
+          
+            return true;
+        }
+        if(document.getElementById("tech").checked)
+        {
+            document.getElementById('techh').value = "Yes";
+        }
+        if(document.getElementById("mang").checked)
+        {
+            document.getElementById('mangh').value = "Yes";
+        }
+        if(document.getElementById("design").checked)
+        {
+            document.getElementById('designh').value = "Yes";
+        }
+    </script>
+</html>

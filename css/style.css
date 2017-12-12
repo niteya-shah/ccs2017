@@ -1,0 +1,97 @@
+html{
+	margin : 5px;
+}
+html{
+    height: 95vh;
+}
+body{
+    font-family: 'Product Sans', sans-serif;
+    background: url("../img/Back5.png");
+    margin: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+.font{
+    font-family: 'Product Sans', sans-serif;
+    color: #ffc107;
+    font-size: 2.8em;
+    text-align: center;
+    margin-top: 15px;
+}
+@media only screen and (max-width: 800px) {
+    .font{
+        font-size: 2.6em;
+    }
+}
+#logoIm{
+    height: 50vh;
+    margin-top: 20px;
+}
+.landing, .login{
+    margin: 0px;
+    color: white;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.login{
+	//display: none;
+}
+.landing{
+    display: none;
+}
+hr{
+    border-color: #ffc107;
+}
+p.typeStyle{
+    font-size: 1.1em;
+    text-align: justify;
+}
+.action-btn{
+    background: #ffc107;
+}
+b.head{
+    font-size: 1.5em;
+}
+span.card-title{
+    font-size: 2.5em;
+}
+.card, .card-content{
+    opacity: 0.95;
+}
+.firstBtn{
+    width: 100%;
+    border-radius: 55%;
+}
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+    opacity: 0;
+    display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/*Checkbox*/
+
+
+
